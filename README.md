@@ -1,7 +1,6 @@
-# My name is Bekalu Endrias
-
-Im 20 years old
-
-Im a software engineering student at jimma university(class of 2025)
-
-Im new here in github and this is my first repository just to get started
+👋 Hi, I’m @bekalue
+😁 Im 20 years old.
+👀 I’m interested in working with others
+🌱 I’m currently learning software engineering at Jimma University.
+💞️ I’m looking to collaborate on ...
+📫 How to reach me @mr_shashe on telegram.
