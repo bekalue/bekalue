@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Bekalu Endrias</h1>
+<h1 align="center">Hi 👋, I'm Bekalu E. Geta</h1>
 <h3 align="center">A passionate full stack developer from Ethiopia</h3>
 <img align="right" alt="Coding" width="400" src="https://cdn.dribbble.com/users/926537/screenshots/4502924/python-2.gif">
 
