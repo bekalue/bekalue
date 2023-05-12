@@ -22,7 +22,7 @@
         <div id="SudRegistration">
             <img src="images/logo.png" alt="Jimma Logo" height="100px">
             <h2>Student Registration</h2>
-            <form id="registrationForm" action="SudRegisteration.php" method="post">
+            <form id="registrationForm" action="home.php" method="post">
                 <!-- Text -->
                 <label for="firstName">First Name:</label><br>
                 <input type="text" id="firstName" name="firstName" required><br>
@@ -82,33 +82,6 @@
     <footer>
         <p>&copy; Jimma University 2023</p>
     </footer>
-
-    <!-- JavaScript -->
-    <script src="js/register.js"></script>
-    <script>
-        document.getElementById('registrationForm').addEventListener('submit', function (event) {
-            event.preventDefault();
-
-            // Get form data
-            var formData = new FormData(this);
-
-            // Create XMLHttpRequest object
-            var xhr = new XMLHttpRequest();
-
-            // Handle response
-            xhr.onload = function () {
-                if (this.status == 200) {
-                    document.getElementById('message').innerHTML = this.responseText;
-                }
-            };
-
-            // Open connection
-            xhr.open('POST', 'SudRegisteration.php');
-
-            // Send request
-            xhr.send(formData);
-        });
-    </script>
 </body>
 
 </html>

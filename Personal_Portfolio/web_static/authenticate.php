@@ -3,11 +3,12 @@ session_start();
 /* Database credentials.*/
 $DATABASE_HOST = 'localhost';
 $DATABASE_USER = 'root';
-$DATABASE_PASS = 'shashe';
+$DATABASE_PASS = 'shashe2054';
 $DATABASE_NAME = 'jimma';
+$port = 3300;
 
 /* Attempt to connect to MySQL database */
-$link = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+$link = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME, $port);
 
 // Check connection
 if ($link === false) {
