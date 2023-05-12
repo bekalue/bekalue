@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Portal</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+
+<body>
+    <header>
+        <h1>Jimma University</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="myDept.html">Department</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <!-- Student registration page content -->
+        <div id="SudRegistration">
+            <img src="images/logo.png" alt="Jimma Logo" height="100px">
+            <h2>Student Registration</h2>
+            <form id="registrationForm" action="SudRegisteration.php" method="post">
+                <!-- Text -->
+                <label for="firstName">First Name:</label><br>
+                <input type="text" id="firstName" name="firstName" required><br>
+
+                <label for="lastName">Last Name:</label><br>
+                <input type="text" id="lastName" name="lastName" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br>
+
+                <!-- Textarea -->
+                <label for="address">Address:</label><br>
+                <textarea id="address" name="address"></textarea><br>
+
+                <label for="hobbies">What are your hobbies?</label><br>
+                <input type="text" id="hobbies" name="hobbies"><br>
+
+                <!-- Radio buttons -->
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+
+                <!-- Dropdown menu -->
+                <label for="program">Program:</label><br>
+                <select id="program" name="program" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="computerScience">Computer Science</option>
+                    <option value="softwareEngineering">Software Engineering</option>
+                    <option value="informationTechnology">Information Technology</option>
+                    <option value="computerEngineering">Computer Engineering</option>
+                    <option value="electricalEngineering">Electrical Engineering</option>
+                    <option value="mechanicalEngineering">Mechanical Engineering</option>
+                    <option value="civilEngineering">Civil Engineering</option>
+                    <option value="chemicalEngineering">Chemical Engineering</option>
+                </select><br>
+
+                <!-- Checkbox -->
+                <label for="terms">I agree to the terms and conditions:</label>
+                <input type="checkbox" id="terms" name="terms" required><br>
+
+                <!-- Button -->
+                <input type="submit" value="Submit">
+            </form>
+            <div id="message"></div>
+
+            <!-- Error message -->
+            <p id="errorMessage"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Jimma University 2023</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/register.js"></script>
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Get form data
+            var formData = new FormData(this);
+
+            // Create XMLHttpRequest object
+            var xhr = new XMLHttpRequest();
+
+            // Handle response
+            xhr.onload = function () {
+                if (this.status == 200) {
+                    document.getElementById('message').innerHTML = this.responseText;
+                }
+            };
+
+            // Open connection
+            xhr.open('POST', 'SudRegisteration.php');
+
+            // Send request
+            xhr.send(formData);
+        });
+    </script>
+</body>
+
+</html>

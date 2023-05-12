@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('../images/jit.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: #1472de;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+header h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+header nav a:hover {
+    background-color: #111;
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+section {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+#SudRegistration {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: aliceblue;
+}
+
+#SudRegistration img {
+    display: block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+#SudRegistration h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#SudRegistration p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#SudRegistration input[type=submit] {
+    background-color: #1472de;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#errorMessage {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+footer {
+    background-color: #1472de;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+footer > p {
+    float: left;
+    margin-right: 30px;
+}
+.login {
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 100px auto;
+}
+
+.login h1 {
+    text-align: center;
+    color: #5b6574;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #dee0e4;
+}
+
+.login form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.login form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #3274d6;
+    color: #ffffff;
+}
+
+.login form input[type="password"],
+.login form input[type="text"] {
+    width: 310px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.login form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #3274d6;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
+}
+
+.login form input[type="submit"]:hover {
+    background-color: #2868c7;
+    transition: background-color 0.2s;
+}
+.login img {
+    display: block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 125px;
+}

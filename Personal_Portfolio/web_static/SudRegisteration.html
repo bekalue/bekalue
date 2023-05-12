@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Portal</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+
+<body>
+    <header>
+        <h1>Jimma University</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="myDept.html">Department</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="login">
+        <img src="images/logo.png" alt="Jimma Logo" height="100px">
+        <h1>Login</h1>
+        <form action="authenticate.php" method="post">
+            <label for="username">
+                <i class="fas fa-user"></i>
+            </label>
+            <input type="text" name="username" placeholder="Username" id="username" required>
+            <label for="password">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="password" name="password" placeholder="Password" id="password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Jimma University 2023</p>
+    </footer>
+</body>
+</html>
