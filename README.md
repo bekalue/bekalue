@@ -38,7 +38,6 @@
     <a href="https://github.com/anuraghazra/github-readme-stats" title="Go to Source">
       <img align="right" width=380 src="https://github-readme-stats.vercel.app/api?username=bekalue&show_icons=true&theme=dark&border_color=ffffff&hide_border=true" />
     </a>
-	  <img height="450" width="380" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bekalue&layout=compact&theme=aura&langs_count=9" />
   </div>
 </p>
 
